@@ -268,6 +268,47 @@
             margin-bottom: 1rem;
         }
 
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: #1a202c;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #4a5568;
+            color: #e2e8f0;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            border-color: #81e6d9;
+        }
+
+        .project-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #e2e8f0;
+        }
+
+        .project-card p {
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+
         /* Contact Section */
         .contact {
             background: linear-gradient(135deg, #1a202c, #2d3748);
@@ -388,6 +429,7 @@
                 <ul class="nav-links">
                     <li><a onclick="scrollToSection('about')">About</a></li>
                     <li><a onclick="scrollToSection('skills')">Skills</a></li>
+                    <li><a onclick="scrollToSection('projects')">Projects</a></li>
                     <li><a onclick="scrollToSection('contact')">Contact</a></li>
                 </ul>
             </nav>
@@ -452,6 +494,30 @@
                     <div class="skill-icon">📊</div>
                     <h3>Quality Strategy</h3>
                     <p>Developing comprehensive QE strategies that align with business goals and user expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🚗</div>
+                    <h3>SXM Tesla Integration</h3>
+                    <p>Led the end-to-end integration of SiriusXM streaming into Tesla vehicles, delivering a seamless in-car experience on time and with zero major incidents. This high-visibility launch improved adoption, enabled multi-account support, and set the foundation for scalable partnerships with other OEMs.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🔧</div>
+                    <h3>Unified Automation Framework</h3>
+                    <p>At SiriusXM, I built a unified test automation framework that scaled across dozens of backend services, integrated seamlessly with CI/CD, and delivered 80%+ adoption in just two quarters. This improved reliability, cut post-deployment bugs by 30%, and became the foundation for flagship.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">👥</div>
+                    <h3>Coaching & Mentoring for Impact</h3>
+                    <p>At SiriusXM, I built a structured coaching and mentoring program to grow future leaders, increase visibility for quieter contributors, and foster peer-to-peer learning. The program led to multiple promotions, stronger engagement, and a sustainable culture of growth and knowledge sharing.</p>
                 </div>
             </div>
         </div>
